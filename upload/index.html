@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- COMMON TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=350, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="og:site_name" content="File Upload">
+    <meta name="fb:admins" content="mdriaz.wd">
+    <meta name="og:type" content="website">
+    <link rel="icon" type="image/ico" sizes="16x16" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+<div class="upload_wrapper">
+
+    <div class="upload_card_wrapper">
+        <h4>File Upload</h4>
+        <a href="../" class="backlist">List</a>
+        <div class="flex-container">
+            <div class="upload_side">
+                <form action="" method="POST" enctype="multipart/form-data" id="file_catcher">
+                    <label for="file_input">
+                    <span class="drop_area_container">
+                        <span class="upload_icon">
+                            <svg viewBox="0 -24 512 512"><defs/><path d="M413.5 129a160.2 160.2 0 00-314.2-.2 112.1 112.1 0 0013 223.5h80a16 16 0 100-32h-80a80.1 80.1 0 11.9-160.2A16 16 0 00129 146a128.2 128.2 0 01254.6 0 17 17 0 0016.9 14.2 80.1 80.1 0 110 160.2h-80.1a16 16 0 100 32h80a112.1 112.1 0 0013-223.4zm0 0"/><path d="M313 287.5a16 16 0 1022.7-22.7l-68-68a16 16 0 00-22.6 0l-68 68a16 16 0 1022.7 22.7l40.6-40.7v201.7a16 16 0 1032 0V246.8zm0 0"/></svg>
+                        </span>
+                        <span class="upload_text">Drag files to upload</span>
+                    </span>
+                        <span class="file_chooser">Choose File</span>
+                        <input type="file" name="file_input" id="file_input" multiple hidden/>
+                    </label>
+
+                </form>
+            </div>
+            <div class="files_side">
+                <h5>Uploading List</h5>
+                <div id="file_list_display">
+                    <span class="insert_before" hidden></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/app.js"></script>
+</body>
+
+</html>
